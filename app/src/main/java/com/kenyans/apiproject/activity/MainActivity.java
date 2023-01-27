@@ -1,4 +1,4 @@
-package com.kenyans.apiproject;
+package com.kenyans.apiproject.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.kenyans.apiproject.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,User_Activity.class);
+                Intent i = new Intent(MainActivity.this, User_Activity.class);
                 i.putExtra("String_that_I_NEED", textInputLayout.getEditText().getText().toString());
                 startActivity(i);
             }
