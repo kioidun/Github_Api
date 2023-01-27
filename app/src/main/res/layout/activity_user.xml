@@ -20,37 +20,119 @@
             android:id="@+id/userPhoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
 
+    <LinearLayout
+        android:id="@+id/textPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="UserName:" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Login Name" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Followers:" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Following:" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView4"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Email:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/textPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <TextView
             android:id="@+id/userName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"/>
+
+
         <TextView
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:textSize="16sp"
+            android:layout_below="@+id/userName"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"/>
+
         <TextView
             android:id="@+id/followers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:textSize="16sp"
+            android:layout_below="@+id/login"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"/>
+
+
         <TextView
             android:id="@+id/following"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:textSize="16sp"
+            android:layout_below="@+id/followers"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"/>
         <TextView
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_below="@id/following"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"/>
+    </LinearLayout>
+    </RelativeLayout>
         <Button
             android:id="@+id/repoButton"
             android:layout_width="match_parent"
